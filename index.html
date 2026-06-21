@@ -1,99 +1,205 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AI-Powered Travel Planning Project</title>
+
 <style>
-body {
+
+body{
     font-family: Arial, sans-serif;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px;
-    line-height: 1.6;
+    line-height: 1.7;
+    background:#fafafa;
+    color:#222;
 }
 
-h1 {
-    color: #222;
+h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-.section {
-    margin-top: 40px;
+h2{
+    margin-top:50px;
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
 }
 
-a {
-    text-decoration: none;
-    color: #0066cc;
+.subtitle{
+    font-size:20px;
+    color:#666;
+    margin-bottom:40px;
 }
+
+.card{
+    background:white;
+    padding:25px;
+    margin-top:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.button{
+    display:inline-block;
+    margin-top:10px;
+    margin-right:10px;
+    padding:10px 18px;
+    background:#0A66C2;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.button:hover{
+    opacity:0.9;
+}
+
+.small-link{
+    display:block;
+    margin-top:10px;
+}
+
+.quote{
+    background:#f0f7ff;
+    padding:20px;
+    border-left:5px solid #0A66C2;
+    border-radius:6px;
+}
+
+ul{
+    line-height:1.9;
+}
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    color:#777;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <h1>AI-Powered Travel Planning Project</h1>
 
-<p>
-This project started with a simple problem:
-I didn't want to spend my holiday making hundreds of tiny decisions.
-Using Claude, I built a bilingual travel field guide and a cultural companion handbook for a 7-day journey across Sicily, Malta and Crete.
-</p>
+<div class="subtitle">
+Turning holiday chaos into a structured, AI-assisted system.
+</div>
 
-<div class="section">
-<h2>Travel Field Guide</h2>
+<div class="quote">
 
-<p>
-<a href="行程手册_互动版可点击.html">
-Open Interactive HTML Guide
-</a>
-</p>
+I wasn't trying to use AI.
 
-<p>
-<a href="西西里克里特行程_中文.pdf">
-Download Chinese PDF
-</a>
-</p>
+I was trying to stop making decisions.
 
-<p>
-<a href="Sicilien_Kreta_Reseplan_Svenska.pdf">
-Download Swedish PDF
-</a>
-</p>
+A week-long trip across Sicily, Malta and Crete meant hundreds of tiny choices:
+Which bus? Which route? Is this attraction actually open? Can we cook dinner here?
+
+Each decision only takes a few minutes.
+
+Together they become the holiday.
 
 </div>
 
-<div class="section">
-<h2>Cultural Companion Booklet</h2>
+<h2>Project Overview</h2>
 
 <p>
-<a href="购物文化手书_互动版.html">
-Open Interactive HTML Version
-</a>
+Using Claude, I created two bilingual resources for a 7-day Mediterranean journey:
 </p>
-
-<p>
-<a href="商场文化手书_中文.pdf">
-Download Chinese PDF
-</a>
-</p>
-
-<p>
-<a href="Kulturguide_Svenska.pdf">
-Download Swedish PDF
-</a>
-</p>
-
-</div>
-
-<div class="section">
-<h2>Lessons Learned</h2>
 
 <ul>
-<li>AI is powerful, but verification matters.</li>
-<li>Human-in-the-loop beats blind automation.</li>
-<li>Constraints often improve the final output.</li>
-<li>The best travel memories are usually the parts no AI can predict.</li>
+<li>Interactive Travel Field Guide</li>
+<li>Cultural Companion Booklet</li>
+<li>Chinese + Swedish versions</li>
+<li>HTML and PDF formats</li>
+</ul>
+
+<p>
+The project evolved into a practical experiment in prompt engineering,
+verification systems, and human-in-the-loop AI workflows.
+</p>
+
+<h2>Travel Field Guide</h2>
+
+<div class="card">
+
+<p>
+A bilingual travel operating system containing routes, transport planning,
+maps, accommodation logistics, budgets, cooking plans and contingency options.
+</p>
+
+<a class="button" href="行程手册_互动版可点击.html">
+Open Interactive Guide
+</a>
+
+<br>
+
+<a class="small-link" href="西西里克里特行程_中文.pdf">
+Download Chinese PDF
+</a>
+
+<a class="small-link" href="Sicilien_Kreta_Reseplan_Svenska.pdf">
+Download Swedish PDF
+</a>
+
+</div>
+
+<h2>Cultural Companion Booklet</h2>
+
+<div class="card">
+
+<p>
+A bilingual cultural handbook exploring mythology, history, geography,
+food culture, local customs, films and literature connected to the places
+visited during the trip.
+</p>
+
+<a class="button" href="购物文化手书_互动版.html">
+Open Interactive Companion
+</a>
+
+<br>
+
+<a class="small-link" href="商场文化手书_中文.pdf">
+Download Chinese PDF
+</a>
+
+<a class="small-link" href="Kulturguide_Svenska.pdf">
+Download Swedish PDF
+</a>
+
+</div>
+
+<h2>Lessons Learned</h2>
+
+<div class="card">
+
+<ul>
+<li><strong>Feed reality, not wishes.</strong> Screenshots, kitchen photos and transport schedules improved outputs dramatically.</li>
+
+<li><strong>Confidence is not correctness.</strong> Verification loops caught mistakes before they became real-world problems.</li>
+
+<li><strong>Manage AI like a teammate.</strong> The best results came after several rounds of feedback and refinement.</li>
+
+<li><strong>Leave some things unoptimised.</strong> AI planned the buses and ferries. It did not predict travel fatigue, spontaneous detours, or two adults becoming surprisingly passionate about where to eat lunch. Probably for the best.</li>
+
 </ul>
 
 </div>
 
+<footer>
+
+Built with Claude · Human-in-the-loop · Mediterranean Summer 2026
+
+</footer>
+
 </body>
 </html>
+```
